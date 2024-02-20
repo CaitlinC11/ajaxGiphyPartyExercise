@@ -4,13 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Giphy Party!</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet"  href="https://bootswatch.com/5/quartz/bootstrap.min.css">
 </head>
-
 <body>
-
-<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-<script src="https://unpkg.com/axios/dist/axios.js"></script>
-<script src="app.js"></script>
+    <div class="container">
+      <h1 class="text-center mt-4 mb-4">GIPHY PARTY</h1>
+      <form class="form-inline d-flex justify-content-center mb-4">
+        <input type="text" id="search" name="search"
+               placeholder="Enter Search Term" class="form-control mr-2"/>
+            <button type="button" class="btn btn-outline-primary">Search Giphy!</button>
+        <button type="button" class="btn btn-outline-warning">Remove Images</button>
+      </form>
+      <div id="gif-area" class="row">   
+      </div>
+    </div>
+    <div id="gif-container"></div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="app.js"></script>
 </body>
-
 </html>
